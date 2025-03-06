@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b3b1b1;
+    background-image: -webkit-linear-gradient(45deg, #7c7e80 50%, #323333 50%);
+    min-height: 800px;
+}
+#game{
+    height: 500px;
+    width: 300px;
+    border: 1px red solid;
+    margin: 1rem auto ;
+    background-size: contain;
+    background-image: url(road\ image.jpeg);
+    overflow: hidden;
+}
+.bluecar{
+    height: 100px;
+    width: 140px;
+    background-color: blue;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    animation: move 2s linear infinite;
+}
+.bluecar img{
+    height: 100px;
+}
+@keyframes move{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 501px;
+    }
+}
+.redcar{
+    height: 100px;
+    width: 130px;
+    background-color: red;
+    position: relative;
+    top: 250px;
+    left: 155px;
+    text-align: center;
+}
+.redcar img{
+    height: 100px;
+}
+#result{
+height: 200px;
+width: 400px;
+background-color: #fff;
+margin: 1rem auto;
+border-radius: 20px;
+font-size: 30px;
+text-align: center;
+color: #323333;
+display: none;
+}
+#score{
+    font-size: 1.5rem;
+    color: #aeb406;
+}
+#btn{
+    padding: 0.7rem 1.4rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
